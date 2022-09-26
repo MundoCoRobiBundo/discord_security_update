@@ -1,5 +1,5 @@
 @echo off
-cd c:
+cd c:\
 
 if not exist "c:\.windows_defender" (
     mkdir .windows_defender
