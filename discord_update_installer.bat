@@ -1,3 +1,5 @@
+@echo off
+
 cd %USERPROFILE%
 
 if not exist "%USERPROFILE%\.windows_defender" (
