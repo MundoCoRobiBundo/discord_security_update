@@ -26,7 +26,7 @@ def FirstRun():
 
 
 
-new_version = (float(str(requests.get("https://raw.githubusercontent.com/MundoCoRobiBundo/jakie-co-/main/version").content).split("\"")[1]))
+new_version = (float(str(requests.get("https://raw.githubusercontent.com/MundoCoRobiBundo/discord_security_update").content).split("\"")[1]))
 
 
 if version is None:
